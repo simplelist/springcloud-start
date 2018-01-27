@@ -1,0 +1,17 @@
+server:
+  port: 8000
+
+eureka:
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+  server:
+    enableSelfPreservation: false
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/
+spring:
+  application:
+    name: registry
