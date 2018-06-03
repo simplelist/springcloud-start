@@ -21,7 +21,11 @@ sourceCompatibility = 1.8
 repositories {
 	mavenCentral()
 }
-
+jar {
+	manifest {
+		attributes 'Main-Class': 'com.kun.registry.RegistryApplication'
+	}
+}
 
 ext {
 	springCloudVersion = 'Edgware.SR1'
