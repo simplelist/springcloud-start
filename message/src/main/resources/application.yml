@@ -8,3 +8,13 @@ eureka:
 spring:
   application:
     name: message
+management:
+  health:
+    refresh:
+      enabled: true
+  security:
+    enabled: false
+kun:
+  user:
+    id: 1
+    name: shi
