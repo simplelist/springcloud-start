@@ -1,10 +1,7 @@
 
 server:
   port: 8001
-eureka:
-    client:
-        serviceUrl:
-            defaultZone: http://localhost:8000/eureka/
+
 spring:
   application:
     name: message
@@ -14,7 +11,3 @@ management:
       enabled: true
   security:
     enabled: false
-kun:
-  user:
-    id: 1
-    name: shi

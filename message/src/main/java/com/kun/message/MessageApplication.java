@@ -30,7 +30,7 @@ public class MessageApplication {
      * 自动刷新
      * @return
      */
-    @Scheduled(fixedRate = 10000L)
+//    @Scheduled(fixedRate = 10000L)
     public Set<String> update(){
         return contextRefresher.refresh();
     }
