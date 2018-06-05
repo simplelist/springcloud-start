@@ -3,3 +3,8 @@ server:
 spring:
   application:
     name: user
+  zipkin:
+    base-url: http://zipkin-server
+  sleuth:
+    sampler:
+      percentage: 1.0

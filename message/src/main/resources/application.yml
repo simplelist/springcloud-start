@@ -5,6 +5,11 @@ server:
 spring:
   application:
     name: message
+  zipkin:
+    base-url: http://zipkin-server
+  sleuth:
+    sampler:
+      percentage: 1.0
 management:
   health:
     refresh:

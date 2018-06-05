@@ -3,3 +3,8 @@ server:
 spring:
   application:
     name: gateway
+  zipkin:
+    base-url: http://127.0.0.1:9999
+  sleuth:
+    sampler:
+      percentage: 1.0
