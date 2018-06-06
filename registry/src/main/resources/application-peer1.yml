@@ -1,0 +1,11 @@
+server:
+  port: 8000
+
+peer2:
+  server:
+    port: 8001
+    host: localhost
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${peer2.server.host}:${peer2.server.port}/eureka
