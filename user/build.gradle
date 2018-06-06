@@ -28,7 +28,7 @@ ext {
 }
 jar {
     manifest {
-        attributes 'Main-Class': 'com.kun.registry.RegistryApplication'
+        attributes 'Main-Class': 'com.kun.user.RegistryApplication'
     }
 }
 
