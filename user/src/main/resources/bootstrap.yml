@@ -2,15 +2,17 @@
 eureka:
   instance:
     prefer-ip-address: true
+    metadata-map:
+      routingTag: ${user.name}-${spring.cloud.client.ipAddress}
   client:
     serviceUrl:
-      defaultZone: ${eurekahost:http://localhost:8000/eureka/}
+      defaultZone: http://localhost:8000/eureka/
 
-spring:
-  cloud:
-    config:
-      label: master
-      profile: test
-      discovery:
-        enabled: true
-        service-id: config-server
+#spring:
+#  cloud:
+#    config:
+#      label: master
+#      profile: test
+#      discovery:
+#        enabled: true
+#        service-id: config-server

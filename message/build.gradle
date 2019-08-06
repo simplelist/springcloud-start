@@ -42,7 +42,7 @@ dependencies {
     compile('org.springframework.cloud:spring-cloud-starter-zipkin')
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
-
+    compile 'cn.hutool:hutool-all:4.5.16'
 }
 dependencyManagement {
     imports {

@@ -5,14 +5,18 @@ server:
 spring:
   application:
     name: message
-  zipkin:
-    base-url: http://zipkin-server
-  sleuth:
-    sampler:
-      percentage: 1.0
+#  zipkin:
+#    base-url: http://zipkin-server
+#  sleuth:
+#    sampler:
+#      percentage: 1.0
 management:
   health:
     refresh:
       enabled: true
   security:
+    enabled: false
+name: abc
+hystrix:
+  metrics:
     enabled: false

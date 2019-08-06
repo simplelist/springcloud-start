@@ -1,10 +1,10 @@
 server:
-  port: 9003
+  port: 9998
 spring:
   application:
     name: user
-  zipkin:
-    base-url: http://zipkin-server
-  sleuth:
-    sampler:
-      percentage: 1.0
+#  zipkin:
+#    base-url: http://zipkin-server
+#  sleuth:
+#    sampler:
+#      percentage: 1.0
